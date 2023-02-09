@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IFit Measurement</string>
+    <string name="please">Lütfen cisiyet seçin</string>
+    <string name="man">Erkek</string>
+    <string name="women">Kadın</string>
+    <string name="new_">Yeni</string>
+    <string name="no_value">Henüz hiç bir ölçüm eklemediniz. Lütfen yukarıda bulunan oluştur tuşuna basarak yeni ölçüm ekleyin.</string>
+    <string name="name_surname">Ad SOYAD</string>
+    <string name="age">Yaş</string>
+    <string name="weight">Kilo</string>
+    <string name="height">Boy</string>
+    <string name="arm">Kol</string>
+    <string name="shoulder">Omuz</string>
+    <string name="chest">Göğüs</string>
+    <string name="waist">Bel</string>
+    <string name="hips">Kalça</string>
+    <string name="legs">Bacak</string>
+    <string name="calf">Baldır</string>
+    <string name="save">Kaydet</string>
+    <string name="err">Hata! Lütfen tüm boş alanları doldurun</string>
+    <string name="count">kayıt mevcut</string>
+</resources>

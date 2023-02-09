@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BenFit Ölçüm</string>
+    <string name="count">records available</string>
+    <string name="err">Error! Please fill all blank areas</string>
+    <string name="save">Save</string>
+    <string name="calf">Calf</string>
+    <string name="legs">Legs</string>
+    <string name="hips">Hips</string>
+    <string name="waist">Waist</string>
+    <string name="chest">Chest</string>
+    <string name="shoulder">Shoulder</string>
+    <string name="arm">Arm</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="age">Age</string>
+    <string name="name_surname">Name SURNAME</string>
+    <string name="no_value">You haven\'t added any measurement yet. Please add a new measurement by clicking the create button above.</string>
+    <string name="new_">New</string>
+    <string name="women">Women</string>
+    <string name="man">Man</string>
+    <string name="please">Please select gender</string>
+</resources>

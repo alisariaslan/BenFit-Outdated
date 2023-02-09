@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_select_gender"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/audiowide"
+            android:text="@string/please"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/man" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/audiowide"
+            android:text="@string/man"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <Button
+            android:id="@+id/btn_man"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:backgroundTint="#00000000"
+            app:cornerRadius="100dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/women" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/audiowide"
+            android:text="@string/women"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <Button
+            android:id="@+id/btn_women"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:backgroundTint="#00000000"
+            app:cornerRadius="100dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+            app:layout_constraintEnd_toEndOf="@+id/imageView4"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_physique"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_gender"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/man_physique" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/tv_name_surname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/audiowide"
+                android:shadowColor="#000000"
+                android:shadowRadius="10"
+                android:textAlignment="center"
+                android:textColor="#eee"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/audiowide"
+                android:shadowColor="#000000"
+                android:shadowRadius="10"
+                android:textColor="#eee"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_surname" />
+
+            <TextView
+                android:id="@+id/tv_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/audiowide"
+                android:shadowColor="#000000"
+                android:shadowRadius="10"
+                android:textColor="#eee"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_age" />
+
+            <TextView
+                android:id="@+id/tv_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/audiowide"
+                android:shadowColor="#000000"
+                android:shadowRadius="10"
+                android:textColor="#eee"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_weight" />
+
+            <TextView
+                android:id="@+id/tv_arm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/audiowide"
+                android:shadowColor="#000000"
+                android:shadowRadius="10"
+                android:textColor="#eee"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_height" />
+
+            <TextView
+                android:id="@+id/tv_shoulder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/audiowide"
+                android:shadowColor="#000000"
+                android:shadowRadius="10"
+                android:textColor="#eee"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_arm" />
+
+            <TextView
+                android:id="@+id/tv_chest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/audiowide"
+                android:shadowColor="#000000"
+                android:shadowRadius="10"
+                android:textColor="#eee"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name_surname" />
+
+            <TextView
+                android:id="@+id/tv_waist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/audiowide"
+                android:shadowColor="#000000"
+                android:shadowRadius="10"
+                android:textColor="#eee"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_chest" />
+
+            <TextView
+                android:id="@+id/tv_hips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/audiowide"
+                android:shadowColor="#000000"
+                android:shadowRadius="10"
+                android:textColor="#eee"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_waist" />
+
+            <TextView
+                android:id="@+id/tv_legs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/audiowide"
+                android:shadowColor="#000000"
+                android:shadowRadius="10"
+                android:textColor="#eee"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_hips" />
+
+            <TextView
+                android:id="@+id/tv_calf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:fontFamily="@font/audiowide"
+                android:shadowColor="#000000"
+                android:shadowRadius="10"
+                android:textColor="#eee"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_legs" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                android:background="#4D000000"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@android:drawable/ic_menu_delete"
+                tools:visibility="visible" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_details"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="visible">
+
+            <EditText
+                android:id="@+id/et_name_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:ems="10"
+                android:fontFamily="@font/audiowide"
+                android:hint="@string/name_surname"
+                android:inputType="textPersonName"
+                android:maxLength="50"
+                android:textColor="#eee"
+                android:textColorHint="#666"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="50dp"
+                        android:ems="3"
+                        android:fontFamily="@font/audiowide"
+                        android:hint="@string/age"
+                        android:inputType="numberSigned"
+                        android:maxLength="3"
+                        android:textColor="#eee"
+                        android:textColorHint="#666"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="50dp"
+                        android:ems="5"
+                        android:fontFamily="@font/audiowide"
+                        android:hint="@string/weight"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:textColor="#eee"
+                        android:textColorHint="#666"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_height"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="50dp"
+                        android:ems="3"
+                        android:fontFamily="@font/audiowide"
+                        android:hint="@string/height"
+                        android:inputType="numberSigned"
+                        android:maxLength="3"
+                        android:textColor="#eee"
+                        android:textColorHint="#666"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_arm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="50dp"
+                        android:ems="4"
+                        android:fontFamily="@font/audiowide"
+                        android:hint="@string/arm"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:textColor="#eee"
+                        android:textColorHint="#666"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_shoulder"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="50dp"
+                        android:ems="5"
+                        android:fontFamily="@font/audiowide"
+                        android:hint="@string/shoulder"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:textColor="#eee"
+                        android:textColorHint="#666"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/et_chest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="50dp"
+                        android:ems="5"
+                        android:fontFamily="@font/audiowide"
+                        android:hint="@string/chest"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:textColor="#eee"
+                        android:textColorHint="#666"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_waist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="50dp"
+                        android:ems="5"
+                        android:fontFamily="@font/audiowide"
+                        android:hint="@string/waist"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:textColor="#eee"
+                        android:textColorHint="#666"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_hips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="50dp"
+                        android:ems="5"
+                        android:fontFamily="@font/audiowide"
+                        android:hint="@string/hips"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:textColor="#eee"
+                        android:textColorHint="#666"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_legs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="50dp"
+                        android:ems="5"
+                        android:fontFamily="@font/audiowide"
+                        android:hint="@string/legs"
+                        android:inputType="numberDecimal"
+                        android:maxLength="5"
+                        android:textColor="#eee"
+                        android:textColorHint="#666"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_calf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="50dp"
+                        android:ems="4"
+                        android:fontFamily="@font/audiowide"
+                        android:hint="@string/calf"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:textColor="#eee"
+                        android:textColorHint="#666"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/audiowide"
+                android:paddingStart="30dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="30dp"
+                android:paddingBottom="10dp"
+                android:text="@string/save"
+                android:textColor="#eee"
+                app:backgroundTint="#4D000000"
+                app:cornerRadius="30dp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

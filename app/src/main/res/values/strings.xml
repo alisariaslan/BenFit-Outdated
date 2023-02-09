@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">IFit Measurement</string>
+    <string name="appid" translatable="false">ca-app-pub-8946455145480386~3498527194</string>
+    <string name="man">Man</string>
+    <string name="women">Women</string>
+    <string name="new_">New</string>
+    <string name="no_value">You haven\'t added any measurement yet. Please add a new measurement by clicking the create button above.</string>
+    <string name="name_surname">Name SURNAME</string>
+    <string name="age">Age</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="arm">Arm</string>
+    <string name="shoulder">Shoulder</string>
+    <string name="chest">Chest</string>
+    <string name="waist">Waist</string>
+    <string name="hips">Hips</string>
+    <string name="legs">Legs</string>
+    <string name="calf">Calf</string>
+    <string name="save">Save</string>
+    <string name="err">Error! Please fill all blank areas</string>
+    <string name="count">records available</string>
+    <string name="please">Please select gender</string>
+
+    //TEST ADDS
+<!--        <string name="bannerAds" translatable="false">ca-app-pub-3940256099942544/6300978111</string>-->
+<!--        <string name="interstatialAds" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+
+    //REAL ADDS
+        <string name="bannerAds" translatable="false">ca-app-pub-8946455145480386/8411942526</string>
+        <string name="interstatialAds" translatable="false">ca-app-pub-8946455145480386/9466584450</string>
+
+</resources>
