@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">IFit Measurement</string>
-    <string name="appid" translatable="false">ca-app-pub-8946455145480386~3498527194</string>
+    <string name="app_name">BenFit</string>
     <string name="man">Man</string>
     <string name="women">Women</string>
     <string name="new_">New</string>
@@ -20,11 +19,5 @@
     <string name="err">Error! Please fill all blank areas</string>
     <string name="count">records available</string>
     <string name="please">Please select gender</string>
-
-    <!-- TEST ADDS -->
-    <!--    <string name="interstatialAds" translatable="false">ca-app-pub-3940256099942544/1033173712</string> -->
-
-    <!-- REAL ADDS -->
-     <string name="interstatialAds" translatable="false">ca-app-pub-8946455145480386/9466584450</string>
 
 </resources>
